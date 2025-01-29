@@ -1,0 +1,14 @@
+
+START
+  PROMPT "Enter a positive integer (n): "
+  READ n
+  SET sum = 0
+
+  FOR i FROM 1 TO n DO
+    IF i MOD 2 = 0 THEN
+      sum = sum + i
+    ENDIF
+  ENDFOR
+
+  PRINT "The sum of all even numbers from 1 to", n, "is:", sum
+END
